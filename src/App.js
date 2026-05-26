@@ -456,71 +456,69 @@ const styles = `
     padding: 20px;
   }
   .popup-box {
-  background: #fff;
-  border-radius: 24px;
-  padding: 36px 32px 32px;
-  max-width: 520px;
-  width: 100%;
-
-  max-height: 90vh;
-  overflow-y: auto;
-
-  box-shadow: 0 24px 64px rgba(79,142,247,0.18);
-  animation: popIn 0.3s cubic-bezier(0.34,1.56,0.64,1);
-}
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px 28px 24px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 24px 64px rgba(79,142,247,0.18);
+    animation: popIn 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  }
   @keyframes popIn {
     from { transform: scale(0.88); opacity: 0; }
     to   { transform: scale(1);    opacity: 1; }
   }
   .popup-icon {
-    width: 58px;
-    height: 58px;
+    width: 48px;
+    height: 48px;
     background: linear-gradient(135deg, #fee2e2, #fecaca);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
-    margin: 0 auto 16px;
+    font-size: 22px;
+    margin: 0 auto 10px;
   }
   .popup-box h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 900;
     color: #1a1d3b;
     text-align: center;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
   .popup-box .popup-sub {
     text-align: center;
     color: #9ca3af;
-    font-size: 13px;
-    margin-bottom: 24px;
+    font-size: 12px;
+    margin-bottom: 16px;
   }
   .rules-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 11px;
-    margin-bottom: 28px;
+    gap: 8px;
+    margin-bottom: 16px;
   }
   .rules-list li {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    font-size: 14px;
+    gap: 10px;
+    font-size: 13px;
     color: #374151;
-    line-height: 1.5;
+    line-height: 1.45;
   }
   .rule-badge {
     flex-shrink: 0;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 1px;
   }
   .rule-badge.red   { background: #fee2e2; }
@@ -532,26 +530,26 @@ const styles = `
     display: block;
     font-weight: 700;
     color: #111827;
-    font-size: 13.5px;
+    font-size: 13px;
   }
   .rule-text span {
     color: #6b7280;
-    font-size: 12.5px;
+    font-size: 12px;
   }
   .popup-warning {
     background: linear-gradient(90deg, #fef3c7, #fff7ed);
     border: 1.5px solid #fbbf24;
     border-radius: 10px;
-    padding: 10px 14px;
-    font-size: 12.5px;
+    padding: 8px 12px;
+    font-size: 12px;
     color: #92400e;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     font-weight: 600;
   }
   .btn-agree {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     background: linear-gradient(135deg, #4f8ef7, #a259f7);
     color: #fff;
     border: none;
