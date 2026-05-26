@@ -503,10 +503,23 @@ export default function App() {
   }, []);
 
   function handleDepartment(dept) {
-    setSelectedDept(dept);
-    setFilteredQuestions(questions.filter((q) => q.department === dept));
-    setScore(null);
-  }
+
+  setSelectedDept(dept);
+
+  const filtered = questions.filter(
+    (q) => q.department === dept
+  );
+
+  const shuffled = [...filtered].sort(
+    () => 0.5 - Math.random()
+  );
+
+  setFilteredQuestions(
+    shuffled.slice(0, 10)
+  );
+
+  setScore(null);
+}
 
   function startExam() {
     if (!candidateName || !candidateEmail || !candidateMobile || !selectedDept) {
